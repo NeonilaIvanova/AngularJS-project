@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--     <script src="./node_modules/angular/angular.js"></script>
+ -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script> -->
+  <script src="./vendors/angular-1.6.10/angular.js"></script>
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>Document</title>
+</head>
+
+<body ng-app="myApp">
+  <div ng-controller="mainController">
+    <h1>{{message}}</h1>
+    <!-- view -->
+
+    <div>
+      <div>First name: {{person.firstName}}</div>
+      <div>Last Name: {{person.lastName}}</div>
+      <div>
+        <img ng-src=" {{person.imgSrc}}" alt="{{person.firstName}} {{person.lastName}}"
+          title="{{person.firstName}} {{person.lastName}}" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
